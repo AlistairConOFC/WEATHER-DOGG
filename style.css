@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9edf2 100%);
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.card {
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 20px 35px -10px rgba(0,0,0,0.15);
+    padding: 25px;
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h2 {
+    margin-top: 0;
+    color: #1e2a3e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 5px solid #007BFF;
+    padding-left: 18px;
+}
+.weather-temp {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007BFF;
+    margin: 15px 0 5px;
+}
+.weather-desc {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+.weather-details {
+    margin-top: 20px;
+    background: #f8f9fc;
+    padding: 15px;
+    border-radius: 20px;
+}
+.animal-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin: 15px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: #f0f0f0;
+}
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+}
+button:hover {
+    background: #0056b3;
+    transform: scale(0.98);
+}
+.auto-update-badge {
+    font-size: 0.75rem;
+    background: #e9ecef;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-weight: normal;
+}
+.error-msg {
+    color: #d9534f;
+    background: #f8d7da;
+    padding: 15px;
+    border-radius: 20px;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #6c757d;
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
