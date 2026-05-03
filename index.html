@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API – Погода, собаки и кошки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- Блок 1: Погода -->
+    <div class="card">
+        <h2>🌤️ Погода сегодня <span class="auto-update-badge">⏱️ каждые 30с</span></h2>
+        <div id="weatherContent">Загрузка погоды...</div>
+        <button id="refreshWeatherBtn">🔄 Обновить погоду</button>
+    </div>
+
+    <!-- Блок 2: Случайные собаки -->
+    <div class="card">
+        <h2>🐕 Случайный пёс</h2>
+        <div id="dogContent">Нажмите на кнопку</div>
+        <button id="newDogBtn">🐾 Показать собаку</button>
+    </div>
+
+    <!-- Блок 3: Случайные кошки -->
+    <div class="card">
+        <h2>🐈 Случайная кошка</h2>
+        <div id="catContent">Нажмите на кнопку</div>
+        <button id="newCatBtn">😺 Показать кошку</button>
+    </div>
+</div>
+<footer>
+    ✅ Домашнее задание: интеграция трёх публичных API<br>
+    Погода – Open-Meteo | Собаки – Dog CEO | Кошки – The Cat API
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
